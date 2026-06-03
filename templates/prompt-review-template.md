@@ -1,24 +1,74 @@
-# Prompt Review Template
+# Prompt and Instruction Review Template
 
-## Prompt name and version
+Use this for prompts that influence business workflows, structured outputs, RAG answers, or tool-using agents.
 
-## Business task
+## 1. Prompt identity
 
-## Input context
+```text
+Prompt name:
+Version:
+Use case:
+Risk tier:
+Owner:
+Last reviewed:
+```
 
-## Output contract
+## 2. Business task
 
-## Refusal / escalation rules
+```text
+What decision or workflow does this prompt support?
+Who consumes the output?
+What happens downstream?
+```
 
-## Known edge cases
+## 3. Context boundary
 
-## Evaluation examples
-
-| Test case | Expected behavior | Pass/fail |
+| Context type | Allowed? | Source / rule |
 | --- | --- | --- |
+| User-provided text | | |
+| Retrieved enterprise knowledge | | |
+| Customer data | | |
+| Sensitive / regulated data | | |
+| Tool outputs | | |
 
-## Approval
+## 4. Output contract
 
-- Product owner:
-- AI engineering:
-- Risk/compliance if needed:
+```text
+Required format:
+Required fields:
+Citation requirement:
+Confidence / uncertainty behavior:
+Escalation behavior:
+Refusal behavior:
+```
+
+## 5. Failure mode review
+
+| Failure mode | Test case | Expected behavior |
+| --- | --- | --- |
+| Missing context | | |
+| Conflicting evidence | | |
+| Prompt injection | | |
+| Unsupported factual claim | | |
+| Unsafe recommendation | | |
+| Wrong output format | | |
+
+## 6. Evaluation evidence
+
+| Metric | Target | Latest result |
+| --- | ---: | ---: |
+| Task success | | |
+| Format validity | | |
+| Citation coverage | | |
+| Refusal correctness | | |
+| Human rework | | |
+
+## 7. Approval
+
+```text
+Product owner:
+AI engineering:
+Risk/compliance if required:
+Release decision:
+Next review trigger:
+```
