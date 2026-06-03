@@ -1,0 +1,26 @@
+name: docs-ci
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate required docs
+        run: |
+          test -f README.md
+          test -f docs/POV.md
+          test -f docs/PROMPT-ENGINEERING.md
+          test -f docs/CONTEXT-ENGINEERING.md
+          test -f docs/EVALUATION-FRAMEWORK.md
+          test -f docs/AI-GOVERNANCE.md
+          test -f docs/OPERATING-MODEL.md
+          test -f docs/LESSONS-LEARNED.md
+          test -f docs/ROADMAP.md
+      - name: Check for empty markdown files
+        run: |
+          for file in $(find . -name '*.md'); do test -s "$file"; done
