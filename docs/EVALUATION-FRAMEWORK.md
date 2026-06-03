@@ -1,67 +1,74 @@
-# Evaluation Framework for GenAI, RAG, and Agents
+# Evaluation Framework: Release Readiness for GenAI, RAG, and Agents
 
-Evaluation is the difference between a convincing demo and a scalable AI capability.
+Evaluation is where enterprise AI becomes manageable.
 
-Enterprise evaluation should answer three questions:
+A demo tells you what might be possible. Evaluation tells you what is reliable enough to put in front of users, customers, or business processes.
 
-1. Does it produce the right outcome?
-2. Can we trust how it produced the outcome?
-3. Is it reliable enough for the business workflow?
+## Evaluation should answer five questions
 
-## Evaluation dimensions
+1. Did the system complete the business task?
+2. Did it use the right evidence or context?
+3. Did it stay within cost and latency boundaries?
+4. Did it follow safety, privacy, and approval controls?
+5. Did it reduce work, or merely move rework somewhere else?
 
-| Dimension | Example metric |
+## Metric families
+
+| Metric family | What to measure |
 | --- | --- |
-| Task success | Completed the intended business task |
-| Grounding | Answer supported by approved evidence |
-| Retrieval quality | Relevant documents found in top results |
-| Output quality | Clear, complete, structured, actionable |
-| Safety | No policy, privacy, or harmful behavior breach |
-| Cost | Within unit economics target |
-| Latency | Within workflow tolerance |
-| Human effort | Rework or review time reduced |
-| Governance | Approval and audit requirements met |
+| Task success | Completion, correctness, workflow fit |
+| Grounding | Citation coverage, source relevance, unsupported claims |
+| Retrieval | Recall, precision, freshness, entitlement correctness |
+| Output quality | Completeness, structure, tone, actionability |
+| Risk and safety | Policy breaches, PII exposure, unsafe recommendations |
+| Operations | Cost, latency, retries, failures, escalation rate |
+| Adoption | Usage, override rate, satisfaction, rework minutes |
 
-## Release-readiness gates
+## Hard gates
 
-Some failures should block release regardless of average score:
+Some failures should block release even if average quality looks good:
 
-- Missing approval on high-risk action
-- No citation for factual policy answer
-- PII exposure
+- Missing approval for high-risk action
+- Unsupported factual policy answer
+- PII leakage into prompt or logs
 - Tool call outside user authority
-- Hallucinated legal, financial, or compliance instruction
-- Unbounded cost or latency profile
+- Hallucinated legal, financial, HR, or compliance guidance
+- Unbounded cost profile
+- No incident owner for production workflow
 
-## Evaluation operating rhythm
+## Evaluation by lifecycle stage
 
-| Stage | Evaluation focus |
+| Stage | Evaluation question |
 | --- | --- |
-| Prototype | Feasibility and obvious failure modes |
-| Pilot | Quality, adoption, and workflow fit |
-| Pre-scale | Regression suite, risk controls, observability |
-| Production | Drift, incidents, cost, latency, user feedback |
-
-## Anti-patterns
-
-- Evaluating only happy-path demos
-- Using human preference without task-level metrics
-- Averaging away governance failures
-- Treating evaluation as a one-time launch activity
-- Not tracking prompt, model, tool, and retrieval changes separately
+| Prototype | Can this capability work at all? |
+| Pilot | Does it work in the real workflow? |
+| Pre-scale | Does it meet quality, risk, cost, and adoption gates? |
+| Production | Is it drifting, failing, or creating hidden rework? |
 
 ## Practical scorecard
 
 ```text
 Use case:
+Risk tier:
+Business owner:
+Evaluation owner:
 Task success target:
 Grounding target:
 Latency target:
 Cost target:
 Human review rule:
 Hard gates:
-Regression set owner:
+Regression set location:
 Production review cadence:
 ```
 
-If a team cannot fill this scorecard, the use case is not ready for scale.
+## Anti-patterns
+
+- Confusing user enthusiasm with quality
+- Testing only successful examples
+- Treating model evaluation and workflow evaluation as the same thing
+- Averaging away governance failures
+- Running evaluation once and never again
+- Not measuring human rework after AI output
+
+Evaluation is not a technical ceremony. It is the operating discipline that lets leaders decide what to scale.
