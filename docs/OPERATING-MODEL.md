@@ -1,47 +1,55 @@
-# Operating Model for Enterprise GenAI
+# Operating Model: How Enterprise AI Actually Scales
 
-Enterprise GenAI needs a federated operating model: central standards and platforms, distributed business ownership, and shared accountability for risk and value.
+Enterprise AI does not scale through isolated centers of excellence or fully decentralized experimentation. It scales through a federated operating model: central standards and reusable platforms, distributed business ownership, and shared accountability for value and risk.
 
 ## Recommended model
 
-| Capability | Ownership pattern |
-| --- | --- |
-| AI strategy and portfolio | Executive AI council |
-| Platform and architecture | Central AI / data platform team |
-| Use-case delivery | Product-aligned squads |
-| Risk and governance | Embedded risk partners plus central standards |
-| Adoption and change | Business owners and transformation leads |
-| Evaluation and monitoring | Shared between engineering and model governance |
+| Capability | Primary owner | Why |
+| --- | --- | --- |
+| AI portfolio strategy | Executive AI council | Align investment to business priorities |
+| Platform architecture | Central AI/data platform | Avoid duplicated infrastructure and standards |
+| Use-case delivery | Domain product squads | Keep workflow ownership close to the business |
+| Context ownership | Business/data owners | Ensure knowledge quality and freshness |
+| Evaluation | AI engineering plus product/risk | Balance technical and business readiness |
+| Governance | Risk partners embedded in delivery | Prevent late-stage control surprises |
+| Adoption | Business transformation leads | Redesign work, not just tools |
 
-## Roles that matter
+## Core roles
 
-- Business sponsor: owns value and adoption
+- Business sponsor: accountable for value and adoption
 - Product owner: owns workflow fit and backlog
-- AI architect: owns solution design and integration choices
-- Data/context owner: owns source quality and freshness
-- Evaluation lead: owns test sets, metrics, and release gates
-- Risk partner: owns control requirements
-- Platform engineer: owns deployment, observability, and reliability
+- AI architect: owns solution design and integration tradeoffs
+- Context owner: owns source quality, metadata, and refresh
+- Evaluation lead: owns benchmark sets and release-readiness gates
+- Risk partner: defines controls by risk tier
+- Platform engineer: owns deployment, observability, reliability, and cost controls
 
 ## Operating cadences
 
 | Cadence | Purpose |
 | --- | --- |
-| Weekly squad review | Delivery progress and blockers |
-| Biweekly architecture review | Context, integration, evaluation, risk |
-| Monthly portfolio review | Value, adoption, cost, incidents |
-| Quarterly strategy review | Funding, capability maturity, platform roadmap |
+| Weekly squad review | Delivery progress, user feedback, blockers |
+| Biweekly architecture and risk review | Context, integration, evaluation, controls |
+| Monthly portfolio review | Value, adoption, incidents, cost, scale decisions |
+| Quarterly capability review | Platform roadmap, talent, funding, standards |
+
+## Maturity progression
+
+| Stage | Signal |
+| --- | --- |
+| Experimentation | Many pilots, inconsistent methods |
+| Repeatability | Shared patterns for prompts, context, and evaluation |
+| Industrialization | Platform, governance, and observability are reusable |
+| Operating advantage | AI capability changes business cycle time and decision quality |
 
 ## Anti-patterns
 
-- Central AI team builds everything and business teams wait
-- Every business unit invents its own tools and standards
-- Governance is separated from delivery squads
+- Central AI team owns delivery but not business outcomes
+- Business units build incompatible tools and governance paths
+- Platform decisions precede use-case evidence
+- Risk is outside the sprint cadence
 - Adoption is treated as training instead of workflow redesign
-- Platform choices are made before use-case patterns are understood
 
 ## Practical recommendation
 
-Start with a hub-and-spoke model. Centralize standards, reusable platforms, security, evaluation, and governance patterns. Federate use-case ownership and adoption into business domains.
-
-The operating model should mature as the portfolio matures.
+Start with hub-and-spoke. Centralize standards, platform capabilities, evaluation patterns, and governance. Federate workflow ownership, adoption, and domain prioritization. Mature toward product/platform funding as patterns stabilize.
