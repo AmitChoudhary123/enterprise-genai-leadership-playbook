@@ -1,44 +1,62 @@
-# AI Governance That Enables Delivery
+# AI Governance: Controls That Travel with the Work
 
-AI governance should not be a late-stage approval committee. It should be a set of practical controls embedded into the delivery lifecycle.
+AI governance fails when it becomes a document review at the end of delivery. It works when controls travel with the use case from intake to production.
 
-## Governance model
+The objective is not to slow delivery. The objective is to make delivery repeatable, explainable, and safe enough to scale.
 
-| Control | Purpose |
+## Governance layers
+
+| Layer | Leadership question |
 | --- | --- |
-| Use-case intake | Confirm business value and ownership |
-| Risk tiering | Match controls to impact and exposure |
-| Architecture review | Validate data, context, model, and workflow choices |
-| Evaluation gates | Prevent weak systems from scaling |
-| Human approval | Preserve accountability for material actions |
-| Audit trail | Explain what happened and why |
-| Monitoring | Detect drift, failures, and cost issues |
-| Incident response | Restore trust when AI behavior fails |
+| Portfolio | Are we funding the right AI work? |
+| Use case | Is there a business owner and measurable outcome? |
+| Data/context | Is the knowledge approved, current, and access-controlled? |
+| Model/prompt | Is behavior versioned, tested, and monitored? |
+| Workflow/action | What can the system do, and who approves it? |
+| Operations | How are failures, drift, cost, and incidents handled? |
 
-## Risk tiering guide
+## Risk-tiered control model
 
-| Tier | Example | Control level |
+| Risk tier | Example | Minimum controls |
 | --- | --- | --- |
-| Low | Internal summarization | Lightweight review and usage monitoring |
-| Medium | Customer support recommendation | Evaluation suite, citations, human override |
-| High | Financial, HR, legal, regulated workflow | Approval gates, audit, risk review, incident plan |
-| Critical | Autonomous high-value action | Block by default unless explicitly governed |
+| Low | Internal summarization | Usage monitoring and feedback path |
+| Medium | Customer support recommendation | Evaluation set, citations, human override |
+| High | Contract, HR, finance, regulated workflow | Approval gate, audit trail, risk review, incident path |
+| Critical | Autonomous high-value or irreversible action | Block by default until explicitly governed |
 
-## Common failure patterns
+## Governance artifacts that matter
 
-- Governance starts after the prototype is already loved by users
-- Risk teams receive vague architecture diagrams instead of evidence
-- Model governance ignores workflow and tool risk
-- Controls are manual, inconsistent, and undocumented
-- No one owns post-launch monitoring
+- AI use-case register
+- Risk tier and rationale
+- Context ownership map
+- Evaluation scorecard
+- Prompt/model/tool version history
+- Human approval matrix
+- Audit and monitoring plan
+- Incident response path
 
-## Practical recommendations
+## Anti-patterns
 
-- Create a single AI use-case register.
-- Define risk tiers before solution design.
-- Require evaluation evidence for scale decisions.
-- Put approval gates in the workflow, not in policy documents only.
-- Review production AI behavior monthly.
-- Make business owners accountable for outcomes, not only AI teams.
+- Governance board reviews without technical evidence
+- Risk classification after solution design
+- Model governance that ignores tools and workflow actions
+- Manual approvals that are not captured in the system
+- No owner for post-launch monitoring
+- Treating open-source or vendor tools as automatically safe
 
-Good governance improves speed because teams know the rules before they build.
+## Practical operating recommendation
+
+Create a lightweight AI control review for every material use case:
+
+```text
+Business owner present?
+Risk tier agreed?
+Context sources approved?
+Evaluation scorecard reviewed?
+Hard gates passed?
+Monitoring owner assigned?
+Incident path confirmed?
+Scale decision recorded?
+```
+
+Good governance should make good teams faster because it removes ambiguity before scale.
