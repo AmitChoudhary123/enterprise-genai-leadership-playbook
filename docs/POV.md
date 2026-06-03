@@ -1,50 +1,46 @@
-# Point of View: Enterprise GenAI Is an Operating Model Shift
+# Point of View: The Enterprise AI Advantage Is Moving from Model Access to Operating Discipline
 
-Enterprise GenAI is no longer a lab topic. It is becoming a redesign of how knowledge work, service operations, analytics, decision support, and customer engagement are delivered.
+The last two years made one thing clear: model access is not a strategy. Every serious enterprise can now access strong foundation models, RAG frameworks, agent tooling, and cloud AI services. What remains scarce is the ability to convert those ingredients into trusted operating capability.
 
-The leadership challenge is not finding use cases. The challenge is selecting the right ones, engineering them with reliable context, evaluating them with discipline, governing them without paralysis, and embedding them into operating routines.
+The winners will not be the firms with the most pilots. They will be the firms that can repeatedly identify where AI changes the economics of work, engineer the right context, evaluate quality before scale, and govern AI behavior without freezing delivery.
 
-## What matters now
+## The shift leaders need to understand
 
-The next wave of enterprise AI value will come from systems that combine:
+GenAI started as a productivity story. It is becoming an operating model story.
 
-- Domain context
-- Workflow integration
-- Human accountability
-- Measurable quality
-- Governance by design
-- Continuous improvement after deployment
+A summarization assistant can be managed as a tool. A RAG system that answers policy questions becomes part of knowledge operations. An agent that calls tools becomes part of the control environment. Once AI enters workflows, leadership must manage not only model behavior but also process risk, decision rights, adoption, and accountability.
 
-A chatbot alone is rarely a transformation. A governed AI workflow that shortens cycle time, improves decision quality, and creates repeatable operating leverage can be.
+## What most companies are still underestimating
 
-## What most companies are missing
+| Area | Typical mistake | Leadership correction |
+| --- | --- | --- |
+| Use cases | Funding attractive demos | Fund workflow-level business outcomes |
+| Context | Indexing documents and calling it RAG | Treat context as governed enterprise architecture |
+| Prompting | Letting prompts live as informal text | Version, review, and evaluate prompt contracts |
+| Agents | Optimizing for autonomy | Design controlled autonomy by risk tier |
+| Evaluation | Running subjective demos | Build release gates and regression sets |
+| Governance | Reviewing late | Embed controls into delivery and runtime |
+| Adoption | Training users after launch | Redesign the workflow with users early |
 
-| Missing capability | Consequence |
-| --- | --- |
-| Clear business ownership | AI remains a technology experiment |
-| Context engineering | RAG systems answer with weak or stale evidence |
-| Evaluation discipline | Teams cannot distinguish impressive from reliable |
-| Operating model | Pilots do not scale beyond enthusiastic teams |
-| Governance embedded in delivery | Risk teams become late-stage blockers |
-| Adoption design | Tools are built but not absorbed into work |
+## The practical leadership stance
 
-## Leadership principles
+A senior AI leader should be asking sharper questions:
 
-1. Fund AI products, not disconnected experiments.
-2. Treat context as architecture, not content upload.
-3. Evaluate before scale, not after failure.
-4. Make governance executable through workflow controls.
-5. Design for adoption and change management from day one.
-6. Build a portfolio view: quick wins, strategic platforms, and capability bets.
+- What business decision or workflow is being improved?
+- What source of truth does the AI rely on?
+- What does good look like, and how do we measure it?
+- Which failures are tolerable, and which must block release?
+- Who owns the outcome after the pilot team moves on?
+- What operating rhythm keeps the system improving after launch?
 
-## Decision lens
+## My working thesis
 
-A GenAI initiative is worth scaling when it satisfies five tests:
+Enterprise GenAI value compounds when five capabilities mature together:
 
-- The business process is important enough to change.
-- The required knowledge can be made explicit and governed.
-- The quality bar can be measured.
-- The workflow has accountable owners.
-- The risk can be controlled operationally.
+1. Portfolio discipline: fewer, better-funded use cases tied to measurable outcomes.
+2. Context engineering: governed knowledge, metadata, retrieval, and workflow state.
+3. Evaluation: scorecards, hard gates, regression sets, and production monitoring.
+4. Governance: risk-tiered controls embedded into delivery and runtime.
+5. Operating model: business, technology, platform, risk, and adoption teams working in one cadence.
 
-If one of these is missing, the initiative may still be useful, but it is not ready to scale.
+Any one of these can create a good demo. All five are required for durable enterprise value.
