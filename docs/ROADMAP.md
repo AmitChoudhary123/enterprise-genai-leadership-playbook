@@ -1,32 +1,47 @@
-# Roadmap
+# Roadmap: 12-Month Leadership Agenda
 
-## Phase 1: Leadership foundation
+This roadmap is written for organizations moving from GenAI activity to GenAI capability.
 
-- Establish GenAI portfolio themes
-- Define use-case intake and prioritization model
-- Create prompt, context, and evaluation standards
-- Stand up lightweight AI governance forum
+## Quarter 1: Establish discipline
 
-## Phase 2: Delivery maturity
+- Create an AI use-case register with business owners
+- Define risk tiers and minimum controls
+- Select 5-8 priority workflows for deeper assessment
+- Publish prompt, context, and evaluation standards
+- Start a monthly AI portfolio review
 
-- Build reusable RAG and agentic AI patterns
-- Create benchmark suites for priority workflows
-- Introduce release-readiness gates
-- Define operating model roles and review cadences
-- Track cost, latency, quality, adoption, and incidents
+## Quarter 2: Build repeatable patterns
 
-## Phase 3: Scale and industrialization
+- Create RAG readiness and context ownership checklists
+- Build evaluation scorecards for priority workflows
+- Establish prompt and model change review practices
+- Define human approval patterns for agentic workflows
+- Instrument cost, latency, quality, and adoption signals
 
-- Launch platform capabilities for context, evaluation, observability, and workflow integration
-- Create reusable domain playbooks
-- Publish internal AI scorecards
-- Mature model and agent governance
-- Move from project funding to product/platform funding
+## Quarter 3: Industrialize delivery
 
-## Phase 4: Enterprise operating advantage
+- Move reusable patterns into platform capabilities
+- Add observability and incident management for production AI
+- Build domain-specific benchmark packs
+- Create an AI architecture review forum
+- Launch communities of practice for product, engineering, and risk teams
 
-- Connect AI portfolio to business transformation KPIs
-- Institutionalize AI product management
-- Build internal communities of practice
-- Continuously improve AI systems through monitoring and feedback
-- Treat AI as an operating capability, not a technology program
+## Quarter 4: Scale with accountability
+
+- Fund AI products and platforms, not only projects
+- Publish portfolio-level value, risk, adoption, and reliability scorecards
+- Mature model and agent governance processes
+- Review operating model gaps and talent needs
+- Retire weak pilots and scale proven patterns
+
+## Leadership measures
+
+| Measure | Why it matters |
+| --- | --- |
+| Use cases with named business owner | Prevents technology-led drift |
+| Use cases with evaluation scorecard | Enables quality-based decisions |
+| Production AI systems with monitoring | Reduces unmanaged operational risk |
+| AI workflows with adoption metrics | Shows business absorption |
+| Reusable patterns adopted by multiple teams | Indicates capability maturity |
+
+The goal after 12 months is not a large number of demos. It is a repeatable enterprise AI delivery system.
