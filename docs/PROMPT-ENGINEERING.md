@@ -1,57 +1,74 @@
-# Prompt Engineering as Delivery Discipline
+# Prompt Engineering: From Craft to Control Surface
 
-Prompt engineering in enterprises should not be treated as clever wording. It is a design discipline for shaping model behavior under business, risk, and workflow constraints.
+In enterprise delivery, prompt engineering is not clever phrasing. It is a control surface for model behavior.
 
-## Practical framework
+A production prompt should make intent, context boundaries, output contracts, escalation rules, and evaluation criteria explicit. If a prompt cannot be reviewed, versioned, and tested, it is not ready to sit inside a business workflow.
 
-A production prompt should define:
+## The senior-leader view
 
-- Role: what capability the model is performing
-- Task: what outcome is expected
-- Context: what information the model may use
-- Constraints: what it must not do
-- Output contract: structure, format, fields, and confidence signals
-- Escalation rule: when to ask for help or refuse
-- Evaluation criteria: how success will be measured
+Prompt work becomes enterprise-grade when it moves through four maturity levels:
 
-## Prompt review checklist
+| Level | Behavior | Risk |
+| --- | --- | --- |
+| Ad hoc | Prompt written inside notebook or app code | Impossible to govern or regress |
+| Reusable | Prompt template stored centrally | Better reuse, still weak evaluation |
+| Contracted | Prompt has input/output schema and refusal rules | Ready for workflow integration |
+| Governed | Prompt is versioned, tested, monitored, and approved by risk tier | Production-ready pattern |
 
-| Question | Why it matters |
-| --- | --- |
-| Is the task specific enough to evaluate? | Vague prompts create subjective acceptance |
-| Is context separated from instruction? | Prevents accidental instruction drift |
-| Is the output format enforceable? | Makes downstream automation safer |
-| Are refusal and escalation rules explicit? | Reduces unsafe overconfidence |
-| Is the prompt tested against edge cases? | Prevents demo-only quality |
-| Is the prompt versioned? | Enables regression analysis |
+## Prompt contract framework
 
-## Anti-patterns
+A serious prompt asset should include:
 
-- Hiding business logic inside long prompts
-- Asking the model to infer policy from examples alone
-- Using one prompt for multiple risk tiers
-- Optimizing for a good demo response instead of repeatable output
-- Treating prompt updates as informal text edits rather than release changes
+- Purpose: the business task it supports
+- Role: the capability being simulated or augmented
+- Context boundary: what information is allowed
+- Output contract: schema, fields, confidence, evidence
+- Decision rights: what the model may decide versus recommend
+- Escalation rules: when to ask for human review
+- Failure modes: known edge cases and unsafe behaviors
+- Evaluation set: examples used before release
+- Owner: business and technical accountability
 
-## Implementation guidance
+## Design patterns that work
 
-- Store prompts as versioned assets, not scattered strings.
-- Keep system instructions short and stable.
-- Put domain facts into context, not the prompt body.
-- Use structured outputs where downstream systems depend on results.
-- Maintain a small regression set for every prompt that reaches production.
-- Review prompt changes with the same seriousness as code changes when business impact is material.
+| Pattern | Use when | Guidance |
+| --- | --- | --- |
+| Structured extraction | Downstream systems need fields | Use strict JSON and validation |
+| Evidence-grounded answer | RAG/policy workflows | Require citations and refuse unsupported claims |
+| Decision recommendation | Human remains accountable | Separate recommendation, reason, evidence, confidence |
+| Tool instruction | Agent calls systems | Include authority, preconditions, and escalation path |
+| Executive summary | Leadership review | Separate facts, implications, risks, and actions |
 
-## Example output contract
+## Anti-patterns I look for in reviews
 
-```json
-{
-  "decision": "approve | reject | escalate",
-  "reason": "brief business-readable explanation",
-  "evidence": ["source-id-1", "source-id-2"],
-  "confidence": "high | medium | low",
-  "human_review_required": true
-}
+- A long prompt carrying business policy that should live in code or configuration
+- A prompt that asks for confidence but never defines how confidence is used
+- A prompt that mixes source facts, instructions, examples, and output format in one block
+- No refusal behavior for missing context
+- No regression set after prompt changes
+- Same prompt used for low-risk and high-risk workflows
+
+## Practical implementation guidance
+
+- Treat prompts like product artifacts, not copywriting.
+- Store prompts outside application code where possible.
+- Use schemas for outputs that trigger workflow action.
+- Keep business rules inspectable; do not bury them in prose.
+- Evaluate prompt versions against a small but stable test suite.
+- Track prompt changes alongside model, retrieval, and tool changes.
+
+## Review checklist
+
+```text
+Prompt owner named?
+Business task clear?
+Allowed context defined?
+Output schema specified?
+Evidence required where factual?
+Escalation behavior defined?
+Risk tier assigned?
+Regression examples attached?
+Monitoring signal defined?
 ```
 
-The more operational the use case, the more explicit the prompt contract must be.
+A prompt that cannot pass this checklist may still be useful for exploration. It is not yet a production artifact.
