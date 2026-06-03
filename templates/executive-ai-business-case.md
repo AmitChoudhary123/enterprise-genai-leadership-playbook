@@ -1,29 +1,84 @@
 # Executive AI Business Case Template
 
-## Use case
+Use this for funding, scale-up, or steering committee decisions. Keep it to two pages unless the risk tier requires more evidence.
 
-## Business outcome
+## 1. Decision requested
 
-## Current workflow pain
+```text
+Approve / reject / incubate / stop:
+Funding required:
+Decision deadline:
+Executive sponsor:
+Business owner:
+```
 
-## Proposed AI capability
+## 2. Strategic fit
 
-## Expected impact
+| Question | Answer |
+| --- | --- |
+| Which strategic priority does this support? | |
+| Which workflow or decision changes? | |
+| Why now? | |
+| Why AI instead of process automation or analytics alone? | |
 
-- Revenue:
-- Cost:
-- Risk:
-- Experience:
-- Cycle time:
+## 3. Value thesis
 
-## Required data and context
+| Value lever | Current baseline | Expected impact | Evidence quality |
+| --- | ---: | ---: | --- |
+| Revenue | | | |
+| Cost productivity | | | |
+| Cycle time | | | |
+| Risk reduction | | | |
+| Customer / employee experience | | | |
 
-## Evaluation approach
+## 4. Solution concept
 
-## Governance and risk controls
+```text
+AI capability:
+Users:
+Workflow integration point:
+Data/context sources:
+Model / architecture pattern:
+Human-in-the-loop design:
+```
 
-## Adoption plan
+## 5. Readiness assessment
 
-## Investment required
+| Dimension | Status | Notes |
+| --- | --- | --- |
+| Business ownership | Green / Amber / Red | |
+| Context readiness | Green / Amber / Red | |
+| Evaluation readiness | Green / Amber / Red | |
+| Governance and risk | Green / Amber / Red | |
+| Adoption feasibility | Green / Amber / Red | |
+| Platform fit | Green / Amber / Red | |
 
-## Decision needed
+## 6. Risk and controls
+
+| Risk | Severity | Control | Owner |
+| --- | --- | --- | --- |
+| Hallucination or unsupported answer | | | |
+| Sensitive data exposure | | | |
+| Wrong action or recommendation | | | |
+| Cost or latency breach | | | |
+| Low adoption / workflow rejection | | | |
+
+## 7. Pilot design
+
+```text
+Pilot duration:
+User group:
+Success metrics:
+Hard gates:
+Stop criteria:
+Scale criteria:
+```
+
+## 8. Recommendation
+
+```text
+Recommended decision:
+Rationale:
+Conditions for approval:
+Next review date:
+```
