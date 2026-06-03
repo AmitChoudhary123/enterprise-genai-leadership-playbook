@@ -1,65 +1,65 @@
 # Enterprise GenAI Leadership Playbook
 
-A practical executive field guide for leading enterprise AI, GenAI, RAG, and agentic AI from experimentation to governed business impact.
+A practitioner field guide for leaders turning GenAI, RAG, and agentic AI from scattered pilots into governed enterprise capability.
 
-## One-line value proposition
+This is not a glossary and not a vendor-neutral brochure. It is a working playbook for the decisions that usually decide whether enterprise AI scales: business ownership, context quality, evaluation discipline, workflow integration, governance, adoption, and operating model design.
 
-This repository gives AI leaders, architects, and delivery teams reusable frameworks for prompt engineering, context engineering, evaluation, governance, and operating model design.
+## Why this repository exists
 
-## Business problem
+Most organizations now have access to capable models. That is no longer the differentiator. The differentiator is the management system around the models: how work is selected, how context is engineered, how agents are constrained, how quality is measured, how risk is governed, and how teams learn after launch.
 
-Most enterprises are no longer struggling to start GenAI pilots. They are struggling to scale the right ones. The hard problems are prioritization, business ownership, context quality, evaluation discipline, risk controls, adoption, and operating model maturity.
+This playbook is written from the perspective of enterprise delivery: the messy middle between strategy decks and production systems.
 
-## Why it matters
+## Who should use it
 
-GenAI and agentic AI are becoming part of core business workflows. Without a clear leadership playbook, organizations create scattered pilots, inconsistent architecture, weak governance, poor evaluation, and fragile adoption. The result is high activity with low enterprise value.
+- CIOs, CTOs, CDOs, and AI transformation leaders shaping an AI portfolio
+- Enterprise architects deciding where GenAI belongs in the platform stack
+- Data science and GenAI delivery leaders building reusable delivery patterns
+- Product owners translating AI capability into workflow impact
+- Risk, compliance, and model governance teams designing practical controls
+- Recruiters and hiring managers looking for senior AI leadership thinking
 
-## What this playbook covers
+## What is inside
 
-- Executive point of view on enterprise GenAI and agentic AI
-- Prompt engineering as a delivery discipline
-- Context engineering for RAG and workflow-aware agents
-- Evaluation frameworks for GenAI, RAG, and agentic systems
-- AI governance that supports delivery instead of blocking it
-- Operating model choices for enterprise AI scale
-- Lessons learned from enterprise AI delivery patterns
-- Roadmap for building AI capability over 12 months
-
-## Who should use this
-
-- AI transformation leaders
-- CIO, CTO, CDO, and digital leaders
-- Enterprise architects
-- Data science and GenAI delivery leaders
-- Product owners and business sponsors
-- Recruiters and hiring managers assessing senior AI leadership depth
-
-## Repository structure
-
-```text
-docs/          Executive guidance and delivery playbooks
-frameworks/    Decision frameworks, scorecards, and canvases
-templates/     Reusable review and planning templates
-.github/       CI workflow
-```
-
-## How to use it
-
-Start with `docs/POV.md`, then use the docs based on the decision you need to make:
-
-| Decision | Start here |
+| Area | File |
 | --- | --- |
-| What should our GenAI strategy emphasize? | `docs/POV.md` |
-| Are our prompts production-ready? | `docs/PROMPT-ENGINEERING.md` |
-| Is our RAG or agent context reliable? | `docs/CONTEXT-ENGINEERING.md` |
-| How do we evaluate quality and readiness? | `docs/EVALUATION-FRAMEWORK.md` |
-| How do we govern without slowing delivery? | `docs/AI-GOVERNANCE.md` |
-| What operating model do we need? | `docs/OPERATING-MODEL.md` |
+| Executive point of view | `docs/POV.md` |
+| Prompt design discipline | `docs/PROMPT-ENGINEERING.md` |
+| RAG and agent context design | `docs/CONTEXT-ENGINEERING.md` |
+| Evaluation and release readiness | `docs/EVALUATION-FRAMEWORK.md` |
+| Governance and controls | `docs/AI-GOVERNANCE.md` |
+| Enterprise operating model | `docs/OPERATING-MODEL.md` |
+| Delivery lessons learned | `docs/LESSONS-LEARNED.md` |
+| Multi-phase roadmap | `docs/ROADMAP.md` |
+| Industry reference map | `docs/INDUSTRY-REFERENCES.md` |
+
+## Reusable assets
+
+| Asset | Purpose |
+| --- | --- |
+| `frameworks/use-case-prioritization.md` | Separate useful AI work from attractive noise |
+| `frameworks/rag-readiness-checklist.md` | Review whether a RAG initiative is ready to build |
+| `frameworks/agentic-ai-risk-matrix.md` | Match agent autonomy to business risk |
+| `frameworks/genai-operating-model-canvas.md` | Run an operating-model design workshop |
+| `templates/evaluation-scorecard.md` | Structure release-readiness reviews |
+| `templates/ai-solution-review-checklist.md` | Review architecture, governance, and adoption together |
+
+## How to read this playbook
+
+If you are an executive, start with `docs/POV.md` and `docs/OPERATING-MODEL.md`.
+
+If you are an architect, start with `docs/CONTEXT-ENGINEERING.md`, `docs/EVALUATION-FRAMEWORK.md`, and `docs/AI-GOVERNANCE.md`.
+
+If you are a delivery leader, start with `frameworks/use-case-prioritization.md`, `templates/ai-solution-review-checklist.md`, and `docs/LESSONS-LEARNED.md`.
+
+## Maturity note
+
+This repository is newly published, but intentionally structured as a living field guide. The content is versioned in public so it can evolve through clearer frameworks, sharper examples, and reusable templates rather than hidden slide decks.
 
 ## Roadmap
 
-- Add industry-specific playbooks
-- Add workshop-ready canvases
-- Add maturity assessment worksheets
+- Add industry-specific playbooks for banking, insurance, healthcare, retail, and technology services
+- Add workshop-ready canvases for operating model and governance design
 - Add example executive review packs
-- Add GitHub Pages documentation site
+- Add GitHub Pages documentation
+- Add companion code examples that connect this playbook to agent and evaluation repositories
