@@ -1,40 +1,48 @@
 # Lessons Learned from Enterprise AI Delivery
 
-These lessons are written for leaders who need AI systems to survive contact with real business operations.
+These are the lessons that tend to survive across industries, platforms, and model cycles.
 
-## 1. The use case is not the workflow
+## 1. The workflow matters more than the demo
 
-A use-case title like "claims copilot" is not enough. Teams must map the actual workflow: who starts it, what information is needed, what decisions are made, what systems are touched, and what happens when confidence is low.
+A use-case title is not a workflow. Before building, map who starts the work, what context is needed, what decision is made, what system changes, and what happens when the AI is uncertain.
 
-## 2. Context beats clever prompting
+## 2. Context ownership is usually the hidden blocker
 
-Many poor GenAI outcomes are context failures. The model is asked to reason over missing, stale, conflicting, or poorly ranked information.
+RAG quality often fails because nobody owns the source content, metadata, freshness, or access rules. The retrieval algorithm is blamed for an operating model problem.
 
-## 3. Evaluation changes the conversation
+## 3. Evaluation creates executive trust
 
-Evaluation creates shared language between engineering, product, risk, and executives. Without it, every review becomes subjective.
+Executives do not need every technical detail. They need to know what was tested, what failed, what risk remains, and what decision is being requested.
 
-## 4. Governance must be designed into the runtime
+## 4. Governance has to be executable
 
-Policy documents do not control AI systems. Workflows, approval gates, audit trails, monitoring, and incident paths do.
+Policies do not control systems. Workflows, approval gates, audit trails, monitoring, and incident response do.
 
-## 5. Adoption is a product problem
+## 5. Agents require business authority design
 
-Users do not adopt AI because it is impressive. They adopt it when it removes friction, improves decisions, and fits into how work is actually done.
+The question is not only what tool an agent can call. The question is whether the user, workflow, and business policy authorize that call.
 
-## 6. Small reusable patterns beat large one-off programs
+## 6. Adoption is not a communications plan
 
-The best enterprise AI teams build repeatable patterns: RAG evaluation, prompt review, context ownership, model monitoring, approval gates, and release checklists.
+If the AI output creates extra checking, copying, reformatting, or exception handling, users will quietly route around it. Measure rework.
 
-## 7. Leadership must manage the portfolio, not the hype
+## 7. Reusable patterns beat heroic projects
 
-A mature AI portfolio includes quick wins, strategic platforms, risk-controlled experiments, and capability-building investments. Treating every idea the same creates noise.
+The most mature teams build patterns: prompt contracts, context maps, evaluation scorecards, governance gates, observability dashboards, and release reviews.
+
+## 8. Cost and latency should be designed early
+
+Many AI pilots become expensive because unit economics are measured after the architecture is emotionally committed.
+
+## 9. The best AI leaders manage a portfolio
+
+Not every idea deserves a build. A healthy portfolio includes quick wins, strategic platforms, risk-controlled experiments, and capability investments.
 
 ## Practical advice
 
-- Start with business-critical workflows, not fashionable demos.
-- Make source ownership explicit.
-- Create test sets early.
-- Track cost and latency from the first pilot.
-- Put risk partners inside the delivery rhythm.
-- Review adoption and rework, not only model quality.
+- Build fewer pilots and review them harder.
+- Assign business owners before solution design.
+- Create evaluation sets before executive demos.
+- Treat context as a managed asset.
+- Put risk partners into the delivery rhythm.
+- Track adoption, rework, cost, latency, and incidents after launch.
